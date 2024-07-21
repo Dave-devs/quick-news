@@ -7,12 +7,12 @@ import { getFirestore } from "firebase/firestore";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDFoqhcvoy2X3DMSU554g0QsGHqpv2e3H4",
-  authDomain: "quick-news-fef40.firebaseapp.com",
-  projectId: "quick-news-fef40",
-  storageBucket: "quick-news-fef40.appspot.com",
-  messagingSenderId: "760640627488",
-  appId: "1:760640627488:web:2c9c6d863cf364e0172d45"
+  apiKey: process.env.API_KEY,
+  authDomain: process.env.AUTH_DOMAIN,
+  projectId: process.env.PROJECT_ID,
+  storageBucket: process.env.STORAGE_BUCKET,
+  messagingSenderId: process.env.MESSAGING_SENDER_ID,
+  appId: process.env.APP_ID
 };
 
 export const app = initializeApp(firebaseConfig);
