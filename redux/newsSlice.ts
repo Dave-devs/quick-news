@@ -21,8 +21,8 @@ const initialState: NewsState = {
   totalResults: 0,
 };
 
-const API_KEY = "fba88b41c8754d2cbe949c2c4ceca890";
-const API_URL = `https://newsapi.org/v2/everything`;
+const API_KEY = process.env.NEWS_API_KEY;
+const API_URL = 'https://newsapi.org/v2/everything';
 
 interface FetchNewsArgs {
   q?: string;
